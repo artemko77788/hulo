@@ -2,10 +2,10 @@
   "name": "hulo",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://goitacademy.github.io/parcel-project-template",
+  "homepage": "https://artemko77788.github.io/hulo/",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /parcel-project-template/"
+    "build": "parcel build src/*.html --public-url /hulo/"
   },
   "repository": {
     "type": "git",
