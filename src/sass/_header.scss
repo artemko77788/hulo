@@ -31,5 +31,22 @@
 .nav-list {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 30px;
+}
+.items {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+}
+
+.contact-us {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.social-media-icon {
+  width: 24px;
+  height: 24px;
 }
