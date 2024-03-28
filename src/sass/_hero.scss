@@ -1,0 +1,51 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 75px;
+  padding-bottom: 66px;
+  border-bottom: 1px solid $main-color;
+}
+.title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 120px;
+}
+
+.hero-title {
+  font-weight: 400;
+  letter-spacing: -2px;
+  text-align: right;
+  text-transform: uppercase;
+  @include size(phone) {
+    font-size: 56px;
+    line-height: 56px;
+  }
+  @include size(tablet) {
+    font-size: 96px;
+    line-height: 96px;
+  }
+  @include size(laptop) {
+    font-size: 128px;
+    line-height: 128px;
+  }
+  @include size(desktop) {
+    font-size: 154px;
+    line-height: 154px;
+  }
+}
+.sub-title {
+  width: 220px;
+  text-align: left;
+}
+
+.chat-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.chat-text {
+  width: 253px;
+  font-size: 24px;
+  line-height: 33.6px;
+  font-weight: 400;
+}
