@@ -1,17 +1,3 @@
-.section {
-  @include size(phone) {
-    margin: 0 16px;
-  }
-  @include size(tablet) {
-    margin: 0 64px;
-  }
-  @include size(laptop) {
-    margin: 0 128px;
-  }
-  @include size(desktop) {
-    margin: 0 254px;
-  }
-}
 .logo {
   font-weight: 300;
   font-style: italic;
