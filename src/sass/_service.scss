@@ -123,3 +123,33 @@
   letter-spacing: 0.15px;
   text-transform: uppercase;
 }
+
+.service-wrap-title {
+  margin-top: 200px;
+  margin-bottom: 93px;
+  padding: 56px 0;
+  border-top: 1px solid $main-color;
+  border-bottom: 1px solid $main-color;
+  width: 100%;
+  text-align: center;
+}
+
+.service-title-second {
+  font-weight: 400;
+  letter-spacing: -1.5px;
+  line-height: 146px;
+  font-size: 16px;
+  font-size: 7vw;
+}
+.pan-effect {
+  position: relative;
+}
+
+.pan-effect::before {
+  content: url('../images/circle1.svg');
+  position: absolute;
+  width: 120%;
+  height: 100%;
+  left: -10%;
+  top: 10%;
+}
