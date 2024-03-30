@@ -49,7 +49,7 @@ p {
   margin: 0;
 }
 
-.section {
+.container {
   @include size(phone) {
     margin: 0 16px;
   }
@@ -65,11 +65,11 @@ p {
 }
 
 .paper {
-  top: 730px;
+  top: 890px;
   position: absolute;
   width: 100%;
-  height: 1935px;
-  background-color: rgba(227, 217, 215, 0.392);
+  height: 800px;
+  background-color: rgb(230, 230, 230);
   mask: url('https://i.ibb.co/7RW8C9t/top.png') top / auto 80px repeat-x, none,
     linear-gradient(white, white) no-repeat center/100% calc(100% - 2 * 60px);
   z-index: -99;

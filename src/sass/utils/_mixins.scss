@@ -1,7 +1,7 @@
 $phone: 320px;
 $tablet: 768px;
 $laptop: 1200px;
-$desktop: 19200px;
+$desktop: 1920px;
 
 @mixin size($size) {
   @if $size == phone {
