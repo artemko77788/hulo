@@ -51,5 +51,68 @@
 }
 .card-work-item {
   padding: 64px 32px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &_text {
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+  }
+  &_title {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 64px;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 72px;
+    letter-spacing: -0.5px;
+    height: 280px;
+  }
+  &_image-wrapper {
+    margin-bottom: 64px;
+    position: relative;
+    height: 240px;
+    width: 360px;
+  }
+  &_image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+  }
+}
+.card-work-item:hover .button .button-text {
+  color: $main-color;
+  margin-left: 5px;
+}
+
+.card-work-item:hover .button .red-dot {
+  height: 130%;
+  width: 100%;
+  transform: translate(0%, -50%);
+  right: 0;
+  background: $hover-color;
+}
+
+.card-work-item:hover .button .arrow-wrapper .arrow {
+  animation-play-state: running;
+}
+.card-work-item:hover .rotate-left {
+  transform: rotate(-8deg);
+}
+.card-work-item:hover .smaller {
+  transform: scale(0.93);
+}
+
+.card-work-item:not(:last-child) {
   border-right: 1px solid $main-color;
 }
