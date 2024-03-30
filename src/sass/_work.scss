@@ -1,0 +1,55 @@
+.work-wrap-title {
+  margin-top: 114px;
+  &_img {
+    margin-left: auto;
+    margin-right: auto;
+    height: 12px;
+    width: 12px;
+  }
+  &_title {
+    text-align: center;
+    font-size: 16px;
+    line-height: 22.4px;
+    font-weight: 500;
+    letter-spacing: 0.15px;
+    text-transform: uppercase;
+    margin-top: 16px;
+    z-index: 20;
+  }
+}
+
+.background-image {
+  background-image: url('../images/background-img.jpeg');
+  background-size: cover;
+  margin-top: -45px;
+  height: 960px;
+  z-index: -99;
+}
+.main-title {
+  font-weight: 400;
+  text-align: center;
+  font-size: 96px;
+  margin-top: 80px;
+  line-height: 105.6px;
+  letter-spacing: -1.5px;
+}
+.pan-effect-work {
+  position: relative;
+}
+.pan-effect-work::after {
+  content: url('../images/circle2.svg');
+  position: absolute;
+  width: 120%;
+  height: 100%;
+  left: -10%;
+  top: 10%;
+}
+
+.cards-work-wrapper {
+  display: flex;
+  border-bottom: 1px solid $main-color;
+}
+.card-work-item {
+  padding: 64px 32px;
+  border-right: 1px solid $main-color;
+}
