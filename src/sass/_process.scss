@@ -1,0 +1,118 @@
+.process {
+  margin-top: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  &_text {
+    font-size: 16px;
+    line-height: 22.4px;
+    font-weight: 500;
+    letter-spacing: 0.15px;
+    text-transform: uppercase;
+    width: 120px;
+  }
+  &_item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  &_img {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+.process-cards {
+  width: 1109px;
+}
+.texts-wrapper {
+  margin-right: 80px;
+}
+.process-card {
+  position: relative;
+  display: flex;
+  border-bottom: 1px solid $main-color;
+  &_number {
+    color: $hover-color;
+    width: 110px;
+    margin-right: 32px;
+  }
+  &_subtitle {
+    margin-bottom: 32px;
+  }
+  &_title {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 57.6px;
+    margin-bottom: 32px;
+  }
+}
+
+.process-card:not(:first-child) {
+  margin-top: 64px;
+}
+
+.process-card-description-wrapper {
+  padding: 32px;
+  background-color: $bg-gray;
+  margin-bottom: 48px;
+  border-radius: 8px;
+
+  &_text {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33.6px;
+    margin-bottom: 64px;
+  }
+}
+
+.content-wrapper {
+  overflow: hidden;
+  max-height: 422px;
+  transition: max-height 0.5s ease-out;
+}
+
+.process-btn-wrapper {
+  position: absolute;
+  right: 0;
+  top: 0;
+  overflow: hidden;
+}
+.process-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: $hover-color;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+.process-btn img {
+  z-index: 99;
+  position: relative;
+  transition: all 0.4s;
+}
+
+.change-color {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200%;
+  height: 200%;
+  display: block;
+  background: $main-color;
+  border-radius: 50px;
+  transform: translate(-50%, -50%);
+  transition: width 0.4s ease-out, height 0.4s ease-out, transform 0.4s ease-out;
+}
+
+.activeBtn .change-color {
+  width: 0;
+  height: 0;
+}
+
+.activeBtn img {
+  transform: rotate(90deg);
+}
