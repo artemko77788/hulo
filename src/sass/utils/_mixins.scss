@@ -22,3 +22,16 @@ $desktop: 1920px;
     }
   }
 }
+
+@mixin image-work-wrapper-style {
+  overflow: hidden;
+  border-radius: $border-radius;
+}
+@mixin image-work-style {
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
+
+@mixin image-work-hover-style {
+  transform: scale(1.3);
+}
