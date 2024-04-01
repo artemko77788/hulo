@@ -1,34 +1,28 @@
 .work-example-first {
   display: flex;
   margin-top: 120px;
-  gap: 175px;
+  justify-content: space-between;
 
+  &_first-card {
+    width: 40%;
+  }
   &_second-card {
-    width: 824px;
-  }
-  &_image1-wrapper {
-    width: 681px;
-    @include image-work-wrapper-style;
-  }
-
-  &_image1-wrapper:hover .work-img {
-    @include image-work-hover-style;
+    width: 50%;
   }
 
   &_second-card-wrapper {
-    width: 575px;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
   }
+}
 
-  &_image2-wrapper {
-    width: 575px;
-    @include image-work-wrapper-style;
-  }
+.image-wrapper-work {
+  @include image-work-wrapper-style;
+}
 
-  &_image2-wrapper:hover .work-img {
-    @include image-work-hover-style;
-  }
+.image-wrapper-work:hover .work-img {
+  @include image-work-hover-style;
 }
 
 .work-img {
@@ -36,10 +30,23 @@
 }
 
 .work-example-first-title {
-  margin: 80px 0 120px;
-  font-size: 96px;
-  line-height: 105.6px;
-  letter-spacing: -1.5px;
+  margin: 20px 0 60px;
+  font-size: 28px;
+  font-weight: 400;
+  @include size(tablet) {
+    margin: 40px 0 80px;
+    font-size: 46px;
+  }
+  @include size(laptop) {
+    margin: 60px 0 100px;
+    font-size: 76px;
+  }
+  @include size(desktop) {
+    margin: 80px 0 120px;
+    font-size: 96px;
+    line-height: 105.6px;
+    letter-spacing: -1.5px;
+  }
 }
 
 .work-example-item {
@@ -72,4 +79,48 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 33.6px;
+}
+
+.work-example-second {
+  display: flex;
+  margin-top: 120px;
+  justify-content: space-between;
+  &_first-card {
+    width: 60%;
+  }
+
+  &_second-card {
+    width: 28%;
+    margin-left: auto;
+    margin-top: auto;
+  }
+}
+
+.work-example-third {
+  display: flex;
+  margin-top: 120px;
+  justify-content: space-between;
+
+  &_first-card {
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &_second-card {
+    margin-top: auto;
+    width: 24%;
+  }
+  &_third-card {
+    width: 48%;
+  }
+  &_text {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    font-weight: 400;
+    padding: 32px 0;
+    border-top: 1px solid $main-color;
+  }
 }
