@@ -1,5 +1,9 @@
+.background-process {
+  background-color: $background-color;
+  padding: 120px 0;
+}
+
 .process {
-  margin-top: 120px;
   display: flex;
   justify-content: space-between;
   align-items: start;
@@ -55,7 +59,7 @@
 
 .process-card-description-wrapper {
   padding: 32px;
-  background-color: $bg-gray;
+  background-color: $bg-gray-card;
   margin-bottom: 48px;
   border-radius: 8px;
 
