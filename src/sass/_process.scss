@@ -3,18 +3,19 @@
   display: flex;
   justify-content: space-between;
   align-items: start;
+
   &_text {
     font-size: 16px;
     line-height: 22.4px;
     font-weight: 500;
     letter-spacing: 0.15px;
     text-transform: uppercase;
-    width: 120px;
   }
   &_item {
     display: flex;
     align-items: center;
     gap: 16px;
+    width: 35%;
   }
   &_img {
     width: 12px;
@@ -34,7 +35,7 @@
   border-bottom: 1px solid $main-color;
   &_number {
     color: $hover-color;
-    width: 110px;
+    width: 40%;
     margin-right: 32px;
   }
   &_subtitle {
@@ -68,7 +69,7 @@
 
 .content-wrapper {
   overflow: hidden;
-  max-height: 422px;
+  max-height: 100%;
   transition: max-height 0.5s ease-out;
 }
 

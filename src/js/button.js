@@ -5,14 +5,11 @@ firstBtn1.addEventListener('click', function () {
 
   let descriptionHeight = descriptionWrapper.scrollHeight;
 
-  if (
-    descriptionWrapper.style.maxHeight === '0px' ||
-    descriptionWrapper.style.maxHeight === '422px'
-  ) {
+  if (descriptionWrapper.style.maxHeight === '0px') {
     descriptionWrapper.style.maxHeight = descriptionHeight + 'px';
     firstBtn1.classList.remove('activeBtn');
   } else {
-    descriptionWrapper.style.maxHeight = '0';
+    descriptionWrapper.style.maxHeight = '0px';
     firstBtn1.classList.add('activeBtn');
   }
 });
@@ -24,14 +21,11 @@ firstBtn2.addEventListener('click', function () {
 
   let descriptionHeight = descriptionWrapper.scrollHeight;
 
-  if (
-    descriptionWrapper.style.maxHeight === '0px' ||
-    descriptionWrapper.style.maxHeight === '422px'
-  ) {
+  if (descriptionWrapper.style.maxHeight === '0px') {
     descriptionWrapper.style.maxHeight = descriptionHeight + 'px';
     firstBtn2.classList.remove('activeBtn');
   } else {
-    descriptionWrapper.style.maxHeight = '0';
+    descriptionWrapper.style.maxHeight = '0px';
     firstBtn2.classList.add('activeBtn');
   }
 });
@@ -43,14 +37,12 @@ firstBtn3.addEventListener('click', function () {
 
   let descriptionHeight = descriptionWrapper.scrollHeight;
 
-  if (
-    descriptionWrapper.style.maxHeight === '0px' ||
-    descriptionWrapper.style.maxHeight === '422px'
-  ) {
+  if (descriptionWrapper.style.maxHeight === '0px') {
     descriptionWrapper.style.maxHeight = descriptionHeight + 'px';
     firstBtn3.classList.remove('activeBtn');
   } else {
-    descriptionWrapper.style.maxHeight = '0';
+    descriptionWrapper.style.maxHeight = '0px';
+
     firstBtn3.classList.add('activeBtn');
   }
 });
