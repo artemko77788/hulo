@@ -1,0 +1,93 @@
+.contacts {
+  display: flex;
+
+  padding: 80px 0;
+  margin: 80px 0;
+  border-top: 1px solid $main-color;
+  border-bottom: 1px solid $main-color;
+
+  .background {
+    background-color: $background-color;
+  }
+
+  &_title-wrapper {
+    width: 50%;
+  }
+
+  &_address {
+    width: 50%;
+  }
+
+  &_title {
+    letter-spacing: -1.5px;
+    margin: 80px 0;
+    font-size: 96px;
+    font-weight: 400;
+    line-height: 105.6px;
+  }
+
+  &_pan-effect {
+    position: relative;
+  }
+
+  &_pan-effect:after {
+    content: url('../images/circle2.svg');
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 10%;
+  }
+
+  &_item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  &_item img {
+    width: 12px;
+    height: 12px;
+  }
+  &_text {
+    font-size: 16px;
+    line-height: 22.4px;
+    font-weight: 500;
+    letter-spacing: 0.15px;
+    text-transform: uppercase;
+    width: 100px;
+  }
+  &_address-texts {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22.4px;
+    letter-spacing: 0.15px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+  }
+
+  &_address-texts:not(:first-child) {
+    margin-top: 80px;
+  }
+  &_address-link {
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 40.8px;
+    letter-spacing: 0.25px;
+  }
+}
+
+.copyrate {
+  display: flex;
+  justify-content: space-between;
+
+  &_text {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 33.6px;
+  }
+  &_text-wrapper {
+    gap: 20px;
+    display: flex;
+    margin-right: 350px;
+  }
+}
