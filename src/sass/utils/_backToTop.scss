@@ -1,0 +1,65 @@
+.btn-to-top {
+  display: none;
+  position: fixed;
+  bottom: 200px;
+  right: 100px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+
+  &_wrapper {
+    display: flex;
+    align-items: center;
+  }
+  &_name {
+    color: $main-color;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 33.6px;
+    z-index: 20;
+    transition: all 0.3s ease-in-out;
+    margin-right: 8px;
+  }
+
+  &_arrow-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 24px;
+    height: 24px;
+    border-radius: 50px;
+    z-index: 10;
+    transform: rotate(-45deg);
+    background-color: $hover-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &_arrow {
+    transform: rotate(60deg);
+    position: absolute;
+    transform: translate(-0%, -50%);
+    width: 16px;
+    z-index: 10;
+    animation: moves 1.2s ease infinite;
+  }
+
+  @keyframes moves {
+    0% {
+      transform: translate(-50%, 50%);
+    }
+
+    25% {
+      transform: translate(0, 0);
+    }
+
+    75% {
+      transform: translate(0, 0);
+    }
+
+    100% {
+      transform: translate(50%, -50%);
+    }
+  }
+}
