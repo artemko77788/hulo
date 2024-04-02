@@ -1,0 +1,2 @@
+var btnToTop=document.getElementById("btnToTop");function scrollFunction(){console.log(),document.body.scrollTop>20||document.documentElement.scrollTop>20?btnToTop.style.display="block":btnToTop.style.display="none"}function topFunction(){document.body.scrollTop=0,document.documentElement.scrollTop=0}btnToTop.addEventListener("click",topFunction),window.onscroll=function(){scrollFunction()};
+//# sourceMappingURL=index.142a57e9.js.map
